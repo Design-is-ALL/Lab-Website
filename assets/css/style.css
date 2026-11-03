@@ -440,7 +440,8 @@ img { max-width: 100%; display: block; }
 .rtasks li { margin: 0 0 .65rem; line-height: 1.65; font-size: 1.02rem; }
 .rtasks b { color: var(--steel-200); }
 .rfig figcaption { font-family: var(--mono); font-size: .74rem; color: #55606d; margin-top: .6rem; text-align: center; }
+.award-logo-wide { width: 170px; filter: none; }
 .n-split-logo { grid-template-columns: 1fr 130px; align-items: center; }
 .n-logo { width: 120px; height: auto; display: block; justify-self: center; filter: drop-shadow(0 6px 14px rgba(0,0,0,.35)); }
-@media (max-width: 720px) { .award-facts div { grid-template-columns: 1fr; gap: .15rem; } .award-card { grid-template-columns: 1fr; } .award-logo { width: 84px; grid-row: 1; } .n-logo { width: 84px; justify-self: start; grid-row: 1; } }
+@media (max-width: 720px) { .award-facts div { grid-template-columns: 1fr; gap: .15rem; } .award-card { grid-template-columns: 1fr; } .award-logo { width: 84px; grid-row: 1; } .award-logo-wide { width: 130px; } .n-logo { width: 84px; justify-self: start; grid-row: 1; } }
 @media (max-width: 900px) { .n-split.n-split-logo { grid-template-columns: 1fr; gap: 1rem; } .n-split-logo .n-logo { width: 84px; justify-self: start; grid-row: 1; } }
