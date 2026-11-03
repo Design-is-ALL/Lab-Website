@@ -428,7 +428,9 @@ img { max-width: 100%; display: block; }
 
 /* ---------- funded-project details (research page) ---------- */
 .rproj-body .award-title { font-family: var(--serif); font-style: italic; color: var(--steel-200); font-size: 1.08rem; margin: 0 0 1.2rem; }
-.award-facts { margin: 0 0 1.8rem; padding: 1rem 1.2rem; background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--bronze); border-radius: var(--radius); display: grid; gap: .65rem; }
+.award-card { display: grid; grid-template-columns: 1fr auto; gap: 1.6rem; align-items: center; margin: 0 0 1.8rem; padding: 1.1rem 1.4rem; background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--bronze); border-radius: var(--radius); }
+.award-facts { margin: 0; display: grid; gap: .65rem; }
+.award-logo { width: 116px; height: auto; display: block; filter: drop-shadow(0 6px 14px rgba(0,0,0,.35)); }
 .award-facts div { display: grid; grid-template-columns: 8.5rem 1fr; gap: 1rem; }
 .award-facts dt { font-family: var(--mono); font-size: .76rem; letter-spacing: .06em; text-transform: uppercase; color: var(--steel-400); padding-top: .2rem; }
 .award-facts dd { margin: 0; color: var(--steel-200); font-size: .98rem; line-height: 1.6; }
@@ -438,5 +440,7 @@ img { max-width: 100%; display: block; }
 .rtasks li { margin: 0 0 .65rem; line-height: 1.65; font-size: 1.02rem; }
 .rtasks b { color: var(--steel-200); }
 .rfig figcaption { font-family: var(--mono); font-size: .74rem; color: #55606d; margin-top: .6rem; text-align: center; }
-.sponsor-logo-lg img { height: 72px; }
-@media (max-width: 720px) { .award-facts div { grid-template-columns: 1fr; gap: .15rem; } }
+.n-split-logo { grid-template-columns: 1fr 130px; align-items: center; }
+.n-logo { width: 120px; height: auto; display: block; justify-self: center; filter: drop-shadow(0 6px 14px rgba(0,0,0,.35)); }
+@media (max-width: 720px) { .award-facts div { grid-template-columns: 1fr; gap: .15rem; } .award-card { grid-template-columns: 1fr; } .award-logo { width: 84px; grid-row: 1; } .n-logo { width: 84px; justify-self: start; grid-row: 1; } }
+@media (max-width: 900px) { .n-split.n-split-logo { grid-template-columns: 1fr; gap: 1rem; } .n-split-logo .n-logo { width: 84px; justify-self: start; grid-row: 1; } }
